@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Chain</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+
+    .image-slider {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .image-slider .slide-track {
+      display: inline-block;
+      animation: scroll 30s linear infinite;
+    }
+
+    .image-slider img {
+      height: 200px;
+      margin: 0 10px;
+      vertical-align: middle;
+      border-radius: 8px;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="image-slider">
+  <div class="slide-track">
+    <img src="D:/project/a4.jpeg" alt="img">
+    <img src="D:/project/a5.jpeg" alt="img">
+    <img src="D:/project/a2.jpeg" alt="img">
+    <img src="D:/project/dog.jpg" alt="img">
+    <img src="D:\project\q7.jpg" alt="img">
+    <img src="D:\project\q8.jpg" alt="img">
+    <img src="D:\project\q9.jpg" alt="img">
+    <img src="D:\project\q10.jpg" alt="img">
+    <img src="D:\project\q12.jpg" alt="img">
+    
+    <img src="D:/project/a4.jpeg" alt="img">
+    <img src="D:/project/a5.jpeg" alt="img">
+    <img src="D:/project/a2.jpeg" alt="img">
+    <img src="D:/project/dog.jpg" alt="img">
+  </div>
+</div>
+
+</body>
+</html>

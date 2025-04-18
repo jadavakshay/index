@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Card Design using HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(146, 136, 251);
+}
+
+@media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }    
+.card-container{
+    
+        display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    justify-content: center;
+   
+    
+}
+.card{
+    width: 325px;
+    height: 100%;
+    background-color:rgb(193, 187, 187);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    
+    overflow: hidden;
+    border-radius: 40px;
+    
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    transition: transform 0.10s ease;
+    
+    
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color: #111;
+    font-size: 15px;
+    line-height: 2.3;
+
+    
+}
+.card img:hover{
+    transform:scale(1.1);
+}
+button{
+    width: 100px;
+    height: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+h1{
+    font-weight: bold;
+    background-color: #111;
+    color: aliceblue;
+    height: 70px;
+    padding: 10px;
+}
+   </style>
+   <script>
+    window.onload=function(){
+        let buttons = document.querySelectorAll(".adopt-button");
+        buttons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                window.location.href = "file:///C:/SEM-2%20PRACTICALS/HTML/project/project%20form.html";
+            });
+        });
+    }
+   </script>
+</head>
+<body>
+  <br><br> <center> <h1>Find Your Favorite Pets</h1></center><br><br>
+    <div class="card-container">
+        <div class="card">
+            <img src="squirrel-animal-cute-rodents-47547.jpeg">
+            <div class="card-content">
+                <h3><center>Squirrel </center></h3>
+                <p><center> Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 3 to 5 years</center></p><br>
+                <p><center>Price:- 2500/- </center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-1170986.webp">
+            <div class="card-content">
+                <h3><center>British Shorthair</center></h3>
+                <p><center> Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 2 to 5 years</center></p><br>
+                <p><center>Price:- 2800/- </center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-583676.webp">
+            <div class="card-content">
+                <h3><center>Lionhead rabbit</center></h3>
+                <p><center> Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 4 to 6 years</center></p><br>
+                <p><center>Price:- 2500/- </center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-1543793.webp">
+            <div class="card-content">
+                <h3><center>Bombay cat</center></h3>
+                <p><center> Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 2 to 5 years</center></p><br>
+                <p><center>Price:- 2100/- </center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-1870376.webp">
+            <div class="card-content">
+                <h3><center>Tabby</h3>
+                <p><center> Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 2 to 4 years</center></p><br>
+                <p><center>Price:- 1800/- </center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-4001296.jpeg">
+            <div class="card-content">
+                <h3><center>Europeoan rabbit</center></h3>
+                <p><center> Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 2 to 5 years</center></p><br>
+                <p><center>Price:- 2800/- </center></p><br> 
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="guinea-pig-sea-pig-house-cute-guinea-pig-house-63853.jpeg">
+            <div class="card-content">
+                <h3><center>Cuy</center></h3>
+                <p><center> Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 3 to 5 years</center></p><br>
+                <p><center>Price:- 2500/- </center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="kitty-cat-kitten-pet-45201.jpeg">
+            <div class="card-content">
+                <h3><center>persain cat</center></h3>
+                <p><center> Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 3 to 6 years</center></p><br>
+                <p><center>Price:- 2600/- </center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+            </div>
+            
+
+       
+
+       
+
+        </div>
+    </div>
+</body>
+</html>

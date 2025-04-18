@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Card Design using HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(146, 136, 251);
+}
+
+@media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }    
+.card-container{
+    
+        display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    justify-content: center;
+   
+    
+}
+.card{
+    width: 325px;
+    height: 100%;
+    background-color:rgb(193, 187, 187);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    
+    overflow: hidden;
+    border-radius: 40px;
+    
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    transition: transform 0.10s ease;
+    
+    
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color: #111;
+    font-size: 15px;
+    line-height: 2.3;
+
+    
+}
+.card img:hover{
+    transform:scale(1.1);
+}
+button{
+    width: 150px;
+    height: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+h1{
+    font-weight: bold;
+    background-color: #111;
+    color: aliceblue;
+    height: 70px;
+    padding: 10px;
+}
+   </style>
+   <script>
+    window.onload=function(){
+
+        let buttons = document.getElementById("adopt-button");
+        buttons.addEventListener("click",function () {
+          window.location.href ="project card.html"; 
+        });
+      let button = document.getElementById("output");
+        button.addEventListener("click",function () {
+          window.location.href ="birds.html"; 
+        });
+
+        let buttonss = document.getElementById("adopt");
+        buttonss.addEventListener("click",function () {
+          window.location.href ="others.html"; 
+        });
+    }
+   </script>
+</head>
+
+<body>
+  <br><br> <center> <h1>Find Your Favorite Pets</h1></center><br><br>
+    <div class="card-container">
+        <div class="card">
+            <img src="pexels-photo-1242419.jpeg.jpg">
+            <div class="card-content">
+                <h3><center>Dogs</center></h3>
+                <p><center>Loyal Companions Ready to join your adventures.</center></p><br>
+                <center><button type="button" id="adopt-button">See More -></button></center>
+
+
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="birds.webp">
+            <div class="card-content">
+                <h3><center>Birds</center></h3>
+                <p><center>Colorful friends that bring song and joy to your home. </center></p><br>
+                
+                <center><button type="button" id="output">See More -></button></center>
+                
+
+                <br>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="others.jpg">
+            <div class="card-content">
+                <h3><center>Others</center></h3>
+                <p><center>Independent spirits with Endless affection to give.</center></p><br>
+                
+               
+                <center><button type="button" id="adopt">See More -></button></center>
+
+
+                <br>
+               
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

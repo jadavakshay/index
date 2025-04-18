@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Card Design using HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(146, 136, 251);
+}
+
+@media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }    
+.card-container{
+    
+        display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    justify-content: center;
+   
+    
+}
+.card{
+    width: 325px;
+    height: 100%;
+    background-color:rgb(193, 187, 187);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    
+    overflow: hidden;
+    border-radius: 40px;
+    
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    transition: transform 0.10s ease;
+    
+    
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color: #111;
+    font-size: 15px;
+    line-height: 2.3;
+
+    
+}
+.card img:hover{
+    transform:scale(1.1);
+}
+button{
+    width: 100px;
+    height: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+h1{
+    font-weight: bold;
+    background-color: #111;
+    color: aliceblue;
+    height: 70px;
+    padding: 10px;
+}
+   </style>
+   <script>
+    window.onload=function(){
+
+        let buttons = document.querySelectorAll(".adopt-button");
+        buttons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                window.location.href = "project form.html";
+            });
+        });
+    }
+   </script>
+</head>
+<body>
+  <br><br> <center> <h1>Find Your Favorite Pets</h1></center><br><br>
+    <div class="card-container">
+        <div class="card">
+            <img src="pexels-photo-1242419.jpeg.jpg">
+            <div class="card-content">
+                <h3><center>Doberman </center></h3>
+                <p><center> Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age: 3 to 8 years</center></p><br>
+                <p><center>Price:- 15000/- </center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="jarman safed.jpeg.jpg">
+            <div class="card-content">
+                <h3><center>Jarman safed</center></h3>
+                <p><center>Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age:- 2 to 7 years</center></p><br>
+                <p><center>Price:- 12000/-</center></p><br>
+               
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+
+                <br>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="malinois-dog-animal-animal-portrait-55806.jpeg.jpg">
+            <div class="card-content">
+                <h3><center>Malinois Dog</center></h3>
+                <p><center>Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age:- 2 to 5 years</center></p><br>
+                <p><center>Price:- 10000/-</center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+                <br>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-1001976.jpeg.jpg">
+            <div class="card-content">
+                <h3><center>Golden Retriever</center></h3>
+                <p><center>Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age:- 1 to 5 years</center></p><br>
+                <p><center>Price:- 13000/-</center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+                <br>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="Rottweiler.jpg">
+            <div class="card-content">
+                <h3><center>Rottweiler</center></h3>
+                <p><center>Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age:- 2 to 8 years</center></p><br>
+                <p><center>Price:- 20000/-</center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+                <br>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-220938.jpeg.jpg">
+            <div class="card-content">
+                <h3><center>Border Collie</center></h3>
+                <p><center>Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age:- 3 to 7 years</center></p><br>
+                <p><center>Price:- 18000/-</center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+                <br>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-2853422.jpeg.jpg">
+            <div class="card-content">
+                <h3><center>Siberian Husky</center></h3>
+                <p><center>Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age:- 2 to 10 years</center></p><br>
+                <p><center>Price:- 19000/-</center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+                <br>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-3397939.webp">
+            <div class="card-content">
+                <h3><center>Goldendoodle</center></h3>
+                <p><center>Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age:- 2 to 8 years</center></p><br>
+                <p><center>Price:- 20000/-</center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+                <br>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-3568214.jpeg.jpg">
+            <div class="card-content">
+                <h3><center>Labrador Retriever</center></h3>
+                <p><center>Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age:- 1 to 8 years</center></p><br>
+                <p><center>Price:- 15000/-</center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+                <br>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-4588037.webp">
+            <div class="card-content">
+                <h3><center>Akita Lnus</center></h3>
+                <p><center>Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age:- 2 to 5 years</center></p><br>
+                <p><center>Price:- 25000/-</center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+                <br>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-981062.webp">
+            <div class="card-content">
+                <h3><center>Poodle</center></h3>
+                <p><center>Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age:- 2 to 8 years</center></p><br>
+                <p><center>Price:- 15000/-</center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+                <br>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="swiss-shepherd-dog-dog-pet-portrait-46505.jpeg.jpg">
+            <div class="card-content">
+                <h3><center>Sheep Dog</center></h3>
+                <p><center>Gender:- Male/Female Both Available</center></p><br>
+                <p><center>Age:- 2 to 10 years</center></p><br>
+                <p><center>Price:- 24000/-</center></p><br>
+                <center><button type="button" class="adopt-button">Adopt</button></center>
+                <br>
+               
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

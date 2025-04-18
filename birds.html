@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Card Design using HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(146, 136, 251);
+}
+
+@media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }    
+.card-container{
+    
+        display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    justify-content: center;
+   
+    
+}
+.card{
+    width: 325px;
+    height: 100%;
+    background-color:rgb(193, 187, 187);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    
+    overflow: hidden;
+    border-radius: 40px;
+    
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    transition: transform 0.10s ease;
+    
+    
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color: #111;
+    font-size: 15px;
+    line-height: 2.3;
+
+    
+}
+.card img:hover{
+    transform:scale(1.1);
+}
+button{
+    width: 100px;
+    height: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+h1{
+    font-weight: bold;
+    background-color: #111;
+    color: aliceblue;
+    height: 70px;
+    padding: 10px;
+}
+   </style>
+   <script>
+    window.onload=function(){
+        let buttons = document.querySelectorAll(".adopt-button");
+        buttons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                window.location.href = "file:///C:/SEM-2%20PRACTICALS/HTML/project/project%20form.html";
+            });
+        });
+    }
+   </script>
+</head>
+<body>
+  <br><br> <center> <h1>Find Your Favorite Birds</h1></center><br><br>
+    <div class="card-container">
+        <div class="card">
+            <img src="th (1).jpeg">
+            <div class="card-content">
+                <h3><center>Cattle egret</center></h3>
+                <p><center> Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 1 to 3 years</center></p><br>
+                <p><center>Price:- 1500/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="th (2).jpeg">
+            <div class="card-content">
+                <h3><center>Vermilion cardinal</center></h3>
+                <p><center> Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 6 Months to 2 years</center></p><br>
+                <p><center>Price:- 1200/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+                
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="th (3).jpeg">
+            <div class="card-content">
+                <h3><center>Blue pigoen</center></h3>
+                <p><center>Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 1 to 2 years</center></p><br>
+                <p><center>Price:- 1000/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="th (4).jpeg">
+            <div class="card-content">
+                <h3><center>Estern Bluebirds</center></h3>
+                <p><center>Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 9 months to 3 years</center></p><br>
+                <p><center>Price:- 1100/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="th (5).jpeg">
+            <div class="card-content">
+                <h3><center>Toco toucan</center></h3>
+                <p><center>Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 1 to 2 years</center></p><br>
+                <p><center>Price:- 1800/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-792416.webp">
+            <div class="card-content">
+                <h3><center> Indian Blue Robin</center></h3>
+                <p><center>Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 1 to 2.5 years</center></p><br>
+                <p><center>Price:- 1200/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="th (7).jpeg">
+            <div class="card-content">
+                <h3><center>Altantic puffin</center></h3>
+                <p><center>Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 2 to 3 years</center></p><br>
+                <p><center>Price:- 1000/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="th (8).jpeg">
+            <div class="card-content">
+                <h3><center>Species of parrot</center></h3>
+                <p><center>Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 6 months to 2 years</center></p><br>
+                <p><center>Price:- 1300/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="th.jpeg">
+            <div class="card-content">
+                <h3><center>Cyanocitta cristata</center></h3>
+                <p><center>Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 1 to 3 years</center></p><br>
+                <p><center>Price:- 1800/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="parrot.jpeg">
+            <div class="card-content">
+                <h3><center>Parrot</center></h3>
+                <p><center>Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 6 months to 3 years</center></p><br>
+                <p><center>Price:- 1200/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-110812.webp">
+            <div class="card-content">
+                <h3><center>White-eared</center></h3>
+                <p><center>Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 8 months to 3 years</center></p><br>
+                <p><center>Price:- 1100/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="pexels-photo-2629372.webp">
+            <div class="card-content">
+                <h3><center>Hummingbird</center></h3>
+                <p><center>Gender:- Male/female Both Avalible</center></p><br>
+                <p><center>Age: 1 to 2 years</center></p><br>
+                <p><center>Price:- 1600/- </center></p><br>
+               <center><button type="button" class="adopt-button">Adopt</button></center>
+               
+               
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
